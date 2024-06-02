@@ -1,6 +1,6 @@
 import Event from '../models/Event.js';
 import User from '../models/User.js';
-import NotificationController from './NotificationController.js';
+import NotificationController from './notificationController.js';
 import path from 'path'; // Ensure path is imported
 
 const eventController = {

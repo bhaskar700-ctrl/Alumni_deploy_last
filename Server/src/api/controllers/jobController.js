@@ -1,6 +1,6 @@
 import Job from '../models/Job.js';
 import User from '../models/User.js';
-import NotificationController from './NotificationController.js';
+import NotificationController from './notificationController.js';
 
 const jobController = {
     createJob: async (req, res) => {

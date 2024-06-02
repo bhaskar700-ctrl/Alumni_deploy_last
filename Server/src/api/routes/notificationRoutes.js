@@ -1,5 +1,5 @@
 import express from 'express';
-import NotificationController from '../controllers/NotificationController.js'; // Adjust the path according to your project structure
+import NotificationController from '../controllers/notificationController.js'; // Adjust the path according to your project structure
 
 const router = express.Router();
 
