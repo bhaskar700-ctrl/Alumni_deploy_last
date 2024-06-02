@@ -33,7 +33,7 @@ function Sidebar({ currentUser }) {
     );
 
     const getProfilePicture = (profilePicture) => {
-        return profilePicture ? `http://localhost:3000${profilePicture}` : '/images/default-avatar.png';
+        return profilePicture ? `https://alumni-deploy-last.onrender.com${profilePicture}` : '/images/default-avatar.png';
     };
 
     return (

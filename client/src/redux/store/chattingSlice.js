@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3000/api/messages'
+    baseURL: 'https://alumni-deploy-last.onrender.com/api/messages'
 });
 
 export const fetchUsers = createAsyncThunk(

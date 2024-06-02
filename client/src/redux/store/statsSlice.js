@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3000/api/stats';
+const API_BASE_URL = 'https://alumni-deploy-last.onrender.com/api/stats';
 
 export const fetchStats = createAsyncThunk('stats/fetchStats', async () => {
   const [usersRes, eventsRes, donationsRes, jobsRes] = await Promise.all([

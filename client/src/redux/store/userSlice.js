@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Setup Axios Instance
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/users', // Adjust if your base URL differs
+  baseURL: 'https://alumni-deploy-last.onrender.com/api/users', // Adjust if your base URL differs
 });
 
 const setAuthToken = (token) => {

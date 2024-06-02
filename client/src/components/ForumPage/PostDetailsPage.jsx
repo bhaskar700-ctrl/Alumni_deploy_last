@@ -11,7 +11,7 @@ const PostDetailsPage = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/forums/post/${postId}`);
+                const response = await axios.get(`https://alumni-deploy-last.onrender.com/api/forums/post/${postId}`);
  // Ensure this matches your backend route
                 setPost(response.data);
                 setLoading(false);

@@ -9,7 +9,7 @@ export const uploadCsv = createAsyncThunk(
         formData.append('file', file);
 
         try {
-            const response = await axios.post(`http://localhost:3000/api/uploads/${type}/upload`, formData, {
+            const response = await axios.post(`https://alumni-deploy-last.onrender.com/api/uploads/${type}/upload`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

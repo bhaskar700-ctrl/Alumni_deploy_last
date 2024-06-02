@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Axios instance with authorization token
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/directory',
+  baseURL: 'https://alumni-deploy-last.onrender.com/api/directory',
 });
 
 // Add a request interceptor to attach the token to the headers

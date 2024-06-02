@@ -31,7 +31,7 @@ const UserProfilePage = () => {
     const profilePictureUrl = userProfile.personalDetails.profilePicture
       ? userProfile.personalDetails.profilePicture.startsWith("http")
         ? userProfile.personalDetails.profilePicture
-        : `http://localhost:3000${userProfile.personalDetails.profilePicture}`
+        : `https://alumni-deploy-last.onrender.com${userProfile.personalDetails.profilePicture}`
       : "https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small_2x/happy-young-cute-illustration-face-profile-png.png";
 
     const commonDetails = (

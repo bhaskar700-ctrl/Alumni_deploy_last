@@ -69,7 +69,7 @@ const JobDetailsPage = () => {
                     </div>
                 </div>
                 <div className="hidden lg:block lg:w-3/5 xl:w-3/5 w-full lg:mt-0 mt-6">
-                    <img src={job.image ? `http://localhost:3000${job.image}` : 'https://i.ibb.co/SKLJ7WX/austin-distel-jp-Hw8ndw-J-Q-unsplash-1.png'} alt="job" className="w-full object-cover object-center object-fill h-full" />
+                    <img src={job.image ? `https://alumni-deploy-last.onrender.com${job.image}` : 'https://i.ibb.co/SKLJ7WX/austin-distel-jp-Hw8ndw-J-Q-unsplash-1.png'} alt="job" className="w-full object-cover object-center object-fill h-full" />
                 </div>
             </div>
         </div>

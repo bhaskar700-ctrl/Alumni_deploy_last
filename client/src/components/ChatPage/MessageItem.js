@@ -8,7 +8,7 @@ function MessageItem({
   handleEditMessage,
   handleDeleteMessage,
 }) {
-  const mediaBaseUrl = "http://localhost:3000"; // Base URL for media files
+  const mediaBaseUrl = "https://alumni-deploy-last.onrender.com"; // Base URL for media files
 
   return (
     <div

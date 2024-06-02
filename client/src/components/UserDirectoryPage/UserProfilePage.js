@@ -27,7 +27,7 @@ const UserDirectoryProfilePage = () => {
   const profilePictureUrl = user.personalDetails.profilePicture
     ? user.personalDetails.profilePicture.startsWith("http")
       ? user.personalDetails.profilePicture
-      : `http://localhost:3000${user.personalDetails.profilePicture}`
+      : `https://alumni-deploy-last.onrender.com${user.personalDetails.profilePicture}`
     : "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
 
   return (

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000/api/gallery';
+const BASE_URL = 'https://alumni-deploy-last.onrender.com/api/gallery';
 
 // Thunk to fetch gallery items
 export const fetchGalleryItems = createAsyncThunk('gallery/fetchGalleryItems', async (_, { getState, rejectWithValue }) => {

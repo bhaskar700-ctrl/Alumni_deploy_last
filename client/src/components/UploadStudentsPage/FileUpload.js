@@ -22,7 +22,7 @@ function FileUpload() {
         formData.append('file', file); // 'file' should match the field name expected by the backend
 
         try {
-            const response = await axios.post('http://localhost:3000/api/students/upload', formData, {
+            const response = await axios.post('https://alumni-deploy-last.onrender.com/api/students/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

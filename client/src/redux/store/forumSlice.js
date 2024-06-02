@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/forums',
+  baseURL: 'https://alumni-deploy-last.onrender.com/api/forums',
 });
 
 const setAuthToken = (token) => {

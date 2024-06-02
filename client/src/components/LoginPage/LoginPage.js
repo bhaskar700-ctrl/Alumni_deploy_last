@@ -17,7 +17,7 @@ const LoginPage = () => {
         toast.info('Logging in...', { autoClose: 2000 });
 
         try {
-            const response = await axios.post('http://localhost:3000/api/users/login', { email, password });
+            const response = await axios.post('https://alumni-deploy-last.onrender.com/api/users/login', { email, password });
             console.log('Login successful:', response.data);
 
             // Store the token, user role, and user ID in localStorage

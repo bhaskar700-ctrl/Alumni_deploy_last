@@ -13,7 +13,7 @@ import MessageList from "./MessageList";
 import MessageInput from "./MessageInput";
 import SearchBar from "./SearchBar";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://alumni-deploy-last.onrender.com");
 
 function ChatWindow({ conversation, currentUser }) {
   const dispatch = useDispatch();

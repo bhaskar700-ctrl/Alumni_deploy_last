@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:3000/api/preusers';
+const apiUrl = 'https://alumni-deploy-last.onrender.com/api/preusers';
 
 // Async thunks for fetching data
 export const fetchAdmins = createAsyncThunk('preUser/fetchAdmins', async () => {

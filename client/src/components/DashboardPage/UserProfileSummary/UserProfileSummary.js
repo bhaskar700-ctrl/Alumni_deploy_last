@@ -34,7 +34,7 @@ const UserProfileSummary = () => {
               <img
                 role="img"
                 className="w-full h-full overflow-hidden object-cover rounded-full"
-                src={`http://localhost:3000${userProfile.personalDetails.profilePicture}` || 'default-avatar.png'}
+                src={`https://alumni-deploy-last.onrender.com${userProfile.personalDetails.profilePicture}` || 'default-avatar.png'}
                 alt="avatar"
               />
             </div>

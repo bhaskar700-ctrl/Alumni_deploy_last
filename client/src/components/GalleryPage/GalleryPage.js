@@ -57,7 +57,7 @@ const GalleryPage = () => {
                                     component="img"
                                     alt={item.description}
                                     height="140"
-                                    image={`http://localhost:3000${item.url}`}
+                                    image={`https://alumni-deploy-last.onrender.com${item.url}`}
                                     title={item.description}
                                 />
                             ) : (
@@ -65,7 +65,7 @@ const GalleryPage = () => {
                                     component="video"
                                     controls
                                     height="140"
-                                    src={`http://localhost:3000${item.url}`}
+                                    src={`https://alumni-deploy-last.onrender.com${item.url}`}
                                     title={item.description}
                                 />
                             )}

@@ -34,7 +34,7 @@ const UserDirectoryPage = () => {
     if (profilePicture.startsWith('http') || profilePicture.startsWith('https')) {
       return profilePicture;
     }
-    return `http://localhost:3000${profilePicture}`;
+    return `https://alumni-deploy-last.onrender.com${profilePicture}`;
   };
 
   if (status === 'loading') {

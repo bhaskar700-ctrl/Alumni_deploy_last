@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Base URL for the API
-const BASE_URL = 'http://localhost:3000/api/notifications';
+const BASE_URL = 'https://alumni-deploy-last.onrender.com/api/notifications';
 
 // Async thunk to fetch notifications
 export const fetchNotifications = createAsyncThunk(

@@ -2,7 +2,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000/api/jobs';
+const BASE_URL = 'https://alumni-deploy-last.onrender.com/api/jobs';
 
 // Async thunks
 export const fetchJobs = createAsyncThunk('jobs/fetchJobs', async (_, { rejectWithValue }) => {

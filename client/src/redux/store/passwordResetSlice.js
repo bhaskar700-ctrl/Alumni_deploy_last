@@ -6,7 +6,7 @@ export const requestPasswordReset = createAsyncThunk(
   'passwordReset/requestPasswordReset',
   async (email, { rejectWithValue }) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/users/request-reset-password', { email });
+      const response = await axios.post('https://alumni-deploy-last.onrender.com/api/users/request-reset-password', { email });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -19,7 +19,7 @@ export const resetPassword = createAsyncThunk(
   'passwordReset/resetPassword',
   async ({ token, newPassword }, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/users/reset-password/${token}`, { newPassword });
+      const response = await axios.post(`https://alumni-deploy-last.onrender.com/api/users/reset-password/${token}`, { newPassword });
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response.data);

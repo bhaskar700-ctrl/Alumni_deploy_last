@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api/donations';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://alumni-deploy-last.onrender.com/api/donations';
 
 const initialState = {
   donations: [],

@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000/api/events';
-const IMAGE_BASE_URL = 'http://localhost:3000/uploads/images'; // Base URL for images
+const BASE_URL = 'https://alumni-deploy-last.onrender.com/api/events';
+const IMAGE_BASE_URL = 'https://alumni-deploy-last.onrender.com/uploads/images'; // Base URL for images
 
 // Fetch all events
 export const fetchEvents = createAsyncThunk(

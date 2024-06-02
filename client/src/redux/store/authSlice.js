@@ -13,7 +13,7 @@ const initialState = {
 // Async thunk for fetching user profile
 export const fetchUser = createAsyncThunk('auth/fetchUser', async (_, { rejectWithValue }) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/user/profile');
+        const response = await axios.get('https://alumni-deploy-last.onrender.com/api/user/profile');
         return response.data;
     } catch (error) {
         return rejectWithValue(error.response.data);

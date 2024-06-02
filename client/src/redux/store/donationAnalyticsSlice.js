@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Base URL for API requests
-const BASE_URL = 'http://localhost:3000/api/analytics';
+const BASE_URL = 'https://alumni-deploy-last.onrender.com/api/analytics';
 
 // Async Thunks to fetch data
 export const fetchTotalDonations = createAsyncThunk(

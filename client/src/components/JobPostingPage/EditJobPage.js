@@ -27,7 +27,7 @@ const EditJobPage = () => {
     const fetchJobDetails = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:3000/api/jobs/${jobId}`, {
+        const response = await axios.get(`https://alumni-deploy-last.onrender.com/api/jobs/${jobId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -67,7 +67,7 @@ const EditJobPage = () => {
     }
 
     try {
-      await axios.put(`http://localhost:3000/api/jobs/update/${jobId}`, data, {
+      await axios.put(`https://alumni-deploy-last.onrender.com/api/jobs/update/${jobId}`, data, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

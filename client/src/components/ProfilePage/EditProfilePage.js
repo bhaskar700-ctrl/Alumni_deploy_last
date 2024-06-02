@@ -141,7 +141,7 @@ function EditProfilePage() {
             fileData.append('profilePicture', file);
 
             try {
-                const response = await axios.post('http://localhost:3000/api/users/upload', fileData, {
+                const response = await axios.post('https://alumni-deploy-last.onrender.com/api/users/upload', fileData, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                         'Authorization': `Bearer ${token}` // Include token in headers

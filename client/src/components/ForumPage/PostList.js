@@ -33,7 +33,7 @@ const PostList = () => {
 
     useEffect(() => {
         if (user) {
-            const socket = io('http://localhost:3000');
+            const socket = io('https://alumni-deploy-last.onrender.com');
 
             socket.on('newPost', newPost => {
                 dispatch(addPost(newPost));
@@ -187,19 +187,19 @@ const PostList = () => {
                             <div>
                                 {post.photo && (
                                     <img 
-                                        src={`http://localhost:3000/${post.photo}`} 
+                                        src={`https://alumni-deploy-last.onrender.com/${post.photo}`} 
                                         alt="Post" 
                                         className="w-full h-48 object-contain border-2 border-gray-500 mt-2 rounded cursor-pointer"
-                                        onClick={() => openModal(`http://localhost:3000/${post.photo}`, 'image')}
+                                        onClick={() => openModal(`https://alumni-deploy-last.onrender.com/${post.photo}`, 'image')}
                                     />
                                 )}
                                 {post.video && (
                                     <video 
                                         controls 
                                         className="w-full h-48 mt-2 rounded cursor-pointer object-contain"
-                                        onClick={() => openModal(`http://localhost:3000/${post.video}`, 'video')}
+                                        onClick={() => openModal(`https://alumni-deploy-last.onrender.com/${post.video}`, 'video')}
                                     >
-                                        <source src={`http://localhost:3000/${post.video}`} type="video/mp4" />
+                                        <source src={`https://alumni-deploy-last.onrender.com/${post.video}`} type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 )}

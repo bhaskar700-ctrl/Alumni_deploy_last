@@ -35,7 +35,7 @@ const JobListPage = () => {
               <img
                 className="w-full h-full object-cover rounded"
                 alt="job"
-                src={job.image ? `http://localhost:3000${job.image}` : 'https://img.freepik.com/premium-psd/we-are-hiring-job-vacancy-social-media-post-template_504779-82.jpg'}
+                src={job.image ? `https://alumni-deploy-last.onrender.com${job.image}` : 'https://img.freepik.com/premium-psd/we-are-hiring-job-vacancy-social-media-post-template_504779-82.jpg'}
               />
             </div>
             <h1 className="text-2xl font-medium mt-2">{job.title}</h1>
