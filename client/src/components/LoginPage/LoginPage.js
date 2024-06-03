@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     const handleLogin = async (event) => {
         event.preventDefault();
-        toast.info('Logging in...', { autoClose: 2000 });
+        toast.info('Logging in...', { autoClose: 5000 });
 
         try {
             const response = await axios.post('https://alumni-deploy-last.onrender.com/api/users/login', { email, password });
